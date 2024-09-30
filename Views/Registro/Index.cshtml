@@ -1,0 +1,88 @@
+@{
+    ViewData["Title"] = "Abrir Cuenta";
+}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center">Abrir cuenta Bancaria en el Banco EE.UU.</h3>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Datos Personales</h4>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Apellido Paterno</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu apellido paterno" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Apellido Materno</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu apellido materno" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo_documento" class="form-label">Tipo de Documento</label>
+                            <select class="form-select" id="tipo_documento" required>
+                                <option selected disabled value="">Selecciona el tipo de documento</option>
+                                <option value="dni">DNI</option>
+                                <option value="ruc">RUC</option>
+                                <option value="pasaporte">Pasaporte</option>
+                                <option value="carnet_extranjeria">Carnet de Extranjería</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" placeholder="Ingresa tu número de teléfono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo_genero" class="form-label">Tipo de Género</label>
+                            <select class="form-select" id="tipo_documento" required>
+                                <option selected disabled value="">Selecciona el tipo de género</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Información para la Cuenta</h4>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo_cuenta" class="form-label">Tipo de Cuenta</label>
+                            <select class="form-select" id="tipo_cuenta" required>
+                                <option selected disabled value="">Selecciona el tipo de cuenta</option>
+                                <option value="personal">Cuenta Personal</option>
+                                <option value="empresarial">Cuenta Empresarial</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">Ingresa tu País</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu país de nacimiento"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">Ingresa tu Saldo Inicial</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu Saldo inicial" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <button type="submit" class="btn btn-primary w-100">Enviar Formulario</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
