@@ -83,14 +83,11 @@ namespace segundapractica.Data.Migrations
                         .HasColumnType("TEXT")
                         .HasMaxLength(256);
 
-                    b.Property<bool>("EmailConfirmed")
+                    b.Property<int>("EmailConfirmed")
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("LockoutEnabled")
+                    b.Property<int>("LockoutEnabled")
                         .HasColumnType("INTEGER");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("TEXT")

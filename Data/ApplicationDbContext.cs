@@ -9,4 +9,6 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+
+    public DbSet<segundapractica.Models.UsuarioModel> DataUsuario { get; set; }
 }
